@@ -18,12 +18,11 @@ export default class UserForm extends React.Component<IProps, IState> {
 
     constructor(props: IProps) {
         super(props)
-        console.log('用户ID', this.props.id)
     }
 
     render() {
         return (<div>
-            The new UserFormComponent is running
+            The new UserFormComponent is running {this.props.id}
         </div>)
     }
 }
