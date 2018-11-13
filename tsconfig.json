@@ -23,7 +23,9 @@
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "paths": {
-
+      "@components/*": ["./src/components/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@assets/*": ["./src/assets/*"]
     }
   },
   "include": [

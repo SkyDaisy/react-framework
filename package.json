@@ -7,6 +7,8 @@
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.js"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "less": "^3.8.1",
     "react": "^16.6.1",
     "react-dom": "^16.6.1"
   },
@@ -22,15 +24,37 @@
     "@types/node": "^10.12.5",
     "@types/react": "^16.7.3",
     "@types/react-dom": "^16.0.9",
+    "autoprefixer": "^9.3.1",
+    "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.0.4",
     "babel-preset-react-hmre": "^1.1.1",
+    "browserslist": "^4.3.4",
+    "clean-webpack-plugin": "^1.0.0",
+    "copy-webpack-plugin": "^4.6.0",
     "cross-env": "^5.2.0",
+    "css-hot-loader": "^1.4.2",
+    "css-loader": "^1.0.1",
+    "cssnano": "^4.1.7",
+    "file-loader": "^2.0.0",
+    "happypack": "^5.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "less-loader": "^4.1.0",
+    "mini-css-extract-plugin": "^0.4.4",
+    "postcss-color-rgba-fallback": "^3.0.0",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-flexibility": "^2.0.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-opacity": "^5.0.0",
+    "progress-bar-webpack-plugin": "^1.11.0",
+    "resolve-url-loader": "^3.0.0",
     "tslint": "^5.11.0",
     "tslint-config-prettier": "^1.15.0",
     "tslint-react": "^3.6.0",
     "typescript": "^3.1.6",
+    "url-loader": "^1.1.2",
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10"
+    "webpack-dev-server": "^3.1.10",
+    "webpack-parallel-uglify-plugin": "^1.1.0"
   }
 }
