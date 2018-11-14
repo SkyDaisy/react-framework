@@ -1,11 +1,12 @@
 import * as React from 'react'
-import UserList from '@components/User/List'
+import Loadable from 'react-loadable'
+import {Spin} from 'antd'
 
-const PagesUserList = () => (
-    <div>
-        <h2>用户列表</h2>
-        <UserList/>
-    </div>
-)
+const PagesUserList = Loadable({
+    loader: () => import('@components/User/List'),
+    loading() {
+        return (<div><Spin tip='loading'/></div>)
+    }
+})
 
 export default PagesUserList

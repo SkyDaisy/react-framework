@@ -12,3 +12,5 @@ declare module '*.svg'
 declare module '*.scss'
 declare module '*.less'
 declare module '*.md'
+
+declare module 'react-loadable'
