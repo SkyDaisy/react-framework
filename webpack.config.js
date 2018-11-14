@@ -10,6 +10,7 @@ const WebpackParallelUglifyPlugin = require('webpack-parallel-uglify-plugin')
 const HappyPack = require('happypack')
 const ProgressBarPlugin = require('progress-bar-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const tsImportPluginFactory = require('ts-import-plugin')
 
 module.exports = {
     mode: isProd ? 'production' : 'development',
@@ -88,6 +89,15 @@ module.exports = {
             {
                 test: /\.(jsx|tsx|js|ts)$/,
                 loader: 'awesome-typescript-loader',
+                options: {
+                    getCustomTransformers: () => ({
+                        before: [ tsImportPluginFactory( {
+                            "libraryName": "antd",
+                            "libraryDirectory": "es",
+                            "style": true
+                        }) ]
+                    }),
+                },
                 exclude: /node_modules/
             },
             {
