@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 export interface IProps {
-
+  match: any
 }
 
 interface IState {
@@ -17,6 +17,8 @@ export default class UserList extends React.Component<IProps, IState> {
 
     constructor(props: IProps) {
         super(props)
+
+        console.log(this.props.match)
     }
 
     render() {

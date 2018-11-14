@@ -1,5 +1,5 @@
 import * as React from 'react'
-import {Redirect, Route, Switch} from 'react-router-dom'
+import {Route, Switch} from 'react-router-dom'
 import PagesUserList from '@pages/User/List'
 import PagesUserForm from '@pages/User/Form'
 
@@ -10,7 +10,6 @@ import PagesUserForm from '@pages/User/Form'
  */
 const PagesRouter = () => (
          <Switch>
-             <Redirect to='/user/list'/>
              <Route path='/user/list' component={PagesUserList}/>
              <Route path='/user/create' component={PagesUserForm}/>
              <Route path='/user/:id' component={PagesUserForm}/>

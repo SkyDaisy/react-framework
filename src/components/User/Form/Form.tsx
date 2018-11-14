@@ -2,7 +2,7 @@ import * as React from 'react'
 import './Form.less'
 
 export interface IProps {
-  id: string
+  match: any
 }
 
 interface IState {
@@ -18,11 +18,14 @@ export default class UserForm extends React.Component<IProps, IState> {
 
     constructor(props: IProps) {
         super(props)
+
+        console.log(this.props.match.params)
+
     }
 
     render() {
         return (<div>
-            The new UserFormComponent is running {this.props.id}
+            The new UserFormComponent is running
         </div>)
     }
 }
