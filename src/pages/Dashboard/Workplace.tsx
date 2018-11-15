@@ -2,7 +2,7 @@ import * as React from 'react'
 
 const PagesDashboardWorkplace = () => (
     <div>
-        this is PagesDashboardAnalysis
+        this is PagesDashboardWorkplace
     </div>
 )
 

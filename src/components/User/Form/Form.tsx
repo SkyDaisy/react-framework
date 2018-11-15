@@ -2,7 +2,8 @@ import * as React from 'react'
 import './Form.less'
 
 export interface IProps {
-  match: any
+  id?: string
+  match?: any
 }
 
 interface IState {

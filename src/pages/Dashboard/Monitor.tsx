@@ -2,7 +2,7 @@ import * as React from 'react'
 
 const PagesDashboardMonitor = () => (
     <div>
-        this is PagesDashboardAnalysis
+        this is PagesDashboardMonitor
     </div>
 )
 

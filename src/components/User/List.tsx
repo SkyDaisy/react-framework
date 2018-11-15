@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 export interface IProps {
-  match: any
+  match?: any
 }
 
 interface IState {
