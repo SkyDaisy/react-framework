@@ -2,7 +2,7 @@ import * as React from 'react'
 import './Form.less'
 
 export interface IProps {
-  id?: string
+  id?: any
   match?: any
 }
 
@@ -20,7 +20,7 @@ export default class UserForm extends React.Component<IProps, IState> {
     constructor(props: IProps) {
         super(props)
 
-        console.log(this.props.match.params)
+        console.log(this.props.id)
 
     }
 
